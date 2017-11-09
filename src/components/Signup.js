@@ -6,7 +6,8 @@ class Signup extends React.Component {
 		super()
 		this.state = {
 			username: "",
-			password: ""
+			password: "",
+			passwordConfirmation: ""
 		}
 	}
 
@@ -18,21 +19,28 @@ class Signup extends React.Component {
 		this.setState({password: event.target.value})
 	}
 
+	handlePasswordConfirmationChange = (event) => {
+		this.setState({passwordConfirmation: event.target.value})
+	}
+
 	handleSubmit = (event) => {
 		event.preventDefault();
-		const userParams = {
+		if (this.state.password === this.state.passwordConfirmation) {
+			const userParams = {
 			username: this.state.username,
 			password: this.state.password
+			}
+			AuthAdapter.signup(userParams)
+				.then((user) => {
+					this.setState({username: "", password: ""})
+					
+					localStorage.setItem("token", user.jwt)
+					console.log(this.props.history)
+					this.props.history.replace("/")
+				})
+			this.props.handleLoginAndSignup()
 		}
-		AuthAdapter.signup(userParams)
-			.then((user) => {
-				this.setState({username: "", password: ""})
-				
-				localStorage.setItem("token", user.jwt)
-				console.log(this.props.history)
-				this.props.history.replace("/")
-			})
-		this.props.handleLoginAndSignup()
+		
 	}
 
 	render() {
@@ -42,6 +50,7 @@ class Signup extends React.Component {
 					<form className="register-form" onSubmit={this.handleSubmit}>
 						<input value={this.state.username} onChange={this.handleUsernameChange} type="text" placeholder="email" />
 						<input value={this.state.password} onChange={this.handlePasswordChange} type='password' placeholder="password" />
+						<input value={this.state.passwordConfirmation} onChange={this.handlePasswordConfirmationChange} type='password' placeholder="password confirmation" />
 						<input type="submit"/>
 					</form>
 				</div>
