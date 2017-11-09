@@ -1,5 +1,6 @@
 import React from 'react'
 import AuthAdapter from '../adapters/authAdapter'
+import swal from 'sweetalert'
 
 class Signup extends React.Component {
 	constructor() {
@@ -39,6 +40,9 @@ class Signup extends React.Component {
 					this.props.history.replace("/")
 				})
 			this.props.handleLoginAndSignup()
+		}
+		else {
+      swal('Your password and password confirmation do not match', 'Please try again.', 'error')
 		}
 		
 	}
