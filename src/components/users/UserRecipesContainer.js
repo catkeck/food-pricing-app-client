@@ -1,6 +1,6 @@
 import React from 'react'
-import UserAdapter from '../adapters/userAdapter'
-import RecipeAdapter from '../adapters/recipeAdapter'
+import UserAdapter from '../../adapters/userAdapter'
+import RecipeAdapter from '../../adapters/recipeAdapter'
 import UserRecipe from './UserRecipe'
 import {Segment, Divider} from 'semantic-ui-react'
 

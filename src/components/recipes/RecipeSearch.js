@@ -1,5 +1,5 @@
 import React from 'react'
-import RecipeAdapter from '../adapters/recipeAdapter'
+import RecipeAdapter from '../../adapters/recipeAdapter'
 import Recipe from './Recipe'
 
 class RecipeSearch extends React.Component {

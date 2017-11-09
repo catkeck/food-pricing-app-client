@@ -1,5 +1,5 @@
 import React from 'react'
-import RestaurantAdapter from '../adapters/restaurantAdapter'
+import RestaurantAdapter from '../../adapters/restaurantAdapter'
 import Restaurants from './Restaurants'
 
 class RestaurantSearch extends React.Component {

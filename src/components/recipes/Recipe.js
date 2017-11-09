@@ -1,8 +1,8 @@
 import React from 'react'
 import Ingredient from './Ingredient'
-import IngredientsAdapter from '../adapters/ingredientsAdapter'
+import IngredientsAdapter from '../../adapters/ingredientsAdapter'
 import { Button, Header, Image, Modal } from 'semantic-ui-react'
-import RecipeAdapter from '../adapters/recipeAdapter'
+import RecipeAdapter from '../../adapters/recipeAdapter'
 
 class Recipe extends React.Component {
 

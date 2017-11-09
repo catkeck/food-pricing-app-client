@@ -1,6 +1,6 @@
 import React from 'react'
-import RecipeAdapter from '../adapters/recipeAdapter'
-import Recipe from './Recipe'
+import RecipeAdapter from '../../adapters/recipeAdapter'
+import Recipe from '../recipes/Recipe'
 import { Card } from 'semantic-ui-react'
 
 class Item extends React.Component {

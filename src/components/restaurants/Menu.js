@@ -1,5 +1,5 @@
 import React from 'react'
-import RestaurantAdapter from '../adapters/restaurantAdapter'
+import RestaurantAdapter from '../../adapters/restaurantAdapter'
 import Item from './Item'
 
 class Menu extends React.Component {

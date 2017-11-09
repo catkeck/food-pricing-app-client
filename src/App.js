@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Route, Link} from 'react-router-dom'
-import RestaurantSearch from './components/RestaurantSearch'
-import Menu from './components/Menu'
+import RestaurantSearch from './components/restaurants/RestaurantSearch'
+import Menu from './components/restaurants/Menu'
 import Login from './components/Login'
 import Signup from './components/Signup'
-import UserRecipesContainer from './components/UserRecipesContainer'
+import UserRecipesContainer from './components/users/UserRecipesContainer'
 import AuthAdapter from './adapters/authAdapter'
 import Navbar from './components/Navbar'
 
