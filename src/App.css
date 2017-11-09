@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.card {
+  float: left;
+}
+
+.App-header {
+  color: #000;
+  background-color: #FFF;
+}
+
+.App-header h1{
+  font-size: 80px;
+}
+
+.menuType {
+/*  position: absolute;*/
+
+  clear: left;
+  margin: auto;
+}
+
+.header-img {
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  z-index: -1;
+}
+
+
+
+.search-form {
+  z-index: 10;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.restaurants {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  position: relative;
+  padding-top: 100px;
+}
+
+.ui.card {
+  height: 250px;
+  word-break: break-all;
+}
+
+body {
+  font-family: 'Gotham A', 'Gotham SSm A', 'Gotham SSm B', 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serifpx;
+}
+
+form{
+  width:500px;
+  margin:0 auto;
+}
+
+.search { 
+  padding:6px 15px 6px 15px;
+  margin:3px; 
+}
+
+.rounded { 
+  border-radius:15px; 
+  -moz-border-radius:15px; 
+  -webkit-border-radius:15px; 
+}
+
+input[type=text]{
+  color:#bcbcbc;
+  width:60%;
+}
+
+input[type=button], input[type=button]:hover {
+  position:relative; 
+  border:1px solid #adc5cf;
+  color:#7da2aa;
+  cursor: pointer;
+}
+
+.search-form {
+  width:95%;
+  height:50px;
+  padding:40px 25px;
+}
+
+.search-form input[type=text]{
+  border:1px solid #d0d0d0;
+  background-color:#fcfcfc;
+}
+
+
+.menu-items {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
