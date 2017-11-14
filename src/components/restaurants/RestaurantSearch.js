@@ -36,9 +36,9 @@ class RestaurantSearch extends React.Component {
 			<div className="all">
 				{!this.state.searched ? <img className="header-img" src="pasta.jpg" alt=""/> : null}
 				<div className="search-form">
-					<form onSubmit={this.handleSubmit}>
-						<span><input type="text" className="search rounded" value={this.state.searchTerm} onChange={this.handleChange}/></span>
-						<span><input type="submit" className="search square"/></span>
+					<form className="form-wrapper cf" onSubmit={this.handleSubmit}>
+						<input type="text" value={this.state.searchTerm} onChange={this.handleChange}/>
+						<button type="submit">Search</button>
 					</form>
 				</div>
 				<div>
@@ -51,6 +51,4 @@ class RestaurantSearch extends React.Component {
 		)
 	}
 }
-
-
 export default RestaurantSearch
