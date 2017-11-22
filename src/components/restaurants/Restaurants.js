@@ -6,7 +6,9 @@ const Restaurants = props => {
     <div className="restaurants">
       {props.data.venues
         ? props.data.venues.map((venue, index) => (
-            <Restaurant key={index} data={venue} showMenu={props.showMenu} />
+            <ol>
+              <Restaurant key={index} data={venue} showMenu={props.showMenu} />
+            </ol>
           ))
         : null}
     </div>

@@ -5,11 +5,12 @@ const Restaurant = props => {
   return (
     <div className="restaurant">
       <Link to={`/menus/${props.data.id}`}>
-        <div className="restaurant-cards">
+        <li>
+          <span>{props.data.key}.</span>
           <h1> {props.data.name}</h1>
           <p>{props.data.location.address}</p>
           <p>{props.data.url}</p>
-        </div>
+        </li>
       </Link>
     </div>
   );
