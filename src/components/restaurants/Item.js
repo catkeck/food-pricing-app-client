@@ -1,7 +1,6 @@
 import React from "react";
 import RecipeAdapter from "../../adapters/recipeAdapter";
 import Recipe from "../recipes/Recipe";
-import { Card } from "semantic-ui-react";
 
 class Item extends React.Component {
   constructor(props) {
@@ -21,13 +20,10 @@ class Item extends React.Component {
 
   render() {
     return (
-      <div className="ui centered link card">
-        <Card
-          link
-          header={this.props.data.name}
-          meta={this.props.data.price}
-          description={this.props.data.description}
-        />
+      <div className="card">
+        <h1>{this.props.data.name}</h1>
+        <p>{this.props.data.price}</p>
+        <p>{this.props.data.description}</p>
         <Recipe searchItem={this.searchItem} data={this.state.recipe} />
       </div>
     );
