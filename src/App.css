@@ -63,8 +63,9 @@
 .restaurants {
   margin: 10px;
   width: 50%;
-  position: relative;
+  position: absolute;
   padding-top: 100px;
+  margin-top: 150px;
 }
 
 .restaurants ol {
@@ -140,6 +141,7 @@ input[type="button"]:hover {
 
 .navbar h2 {
   float: left;
+  margin-top: 0px;
 }
 
 .navbar a {
