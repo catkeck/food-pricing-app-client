@@ -28,6 +28,7 @@
 
 .card {
   float: left;
+  width: 100%;
 }
 
 .App-header {
