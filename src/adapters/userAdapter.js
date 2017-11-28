@@ -1,6 +1,6 @@
 export default class UserAdapter {
   constructor() {
-    this.baseUrl = "http://buttergrams-api.herokuapp.com/api/v1/user";
+    this.baseUrl = "https://buttergrams-api.herokuapp.com/api/v1/user";
   }
 
   getUserRecipes() {

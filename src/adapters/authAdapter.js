@@ -10,14 +10,14 @@ export default class AuthAdapter {
     };
     const userJSON = JSON.stringify(userParams);
     return fetch(
-      "http://buttergrams-api.herokuapp.com/api/v1/login",
+      "https://buttergrams-api.herokuapp.com/api/v1/login",
       request
     ).then(res => res.json());
   }
 
   static signup(userParams) {
     const userJSON = JSON.stringify(userParams);
-    return fetch("http://buttergrams-api.herokuapp.com/api/v1/signup", {
+    return fetch("https://buttergrams-api.herokuapp.com/api/v1/signup", {
       method: "POST",
       body: userJSON,
       headers: {

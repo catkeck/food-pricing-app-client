@@ -1,6 +1,6 @@
 export default class RecipeAdapter {
   constructor() {
-    this.baseUrl = "http://buttergrams-api.herokuapp.com/api/v1/recipes";
+    this.baseUrl = "https://buttergrams-api.herokuapp.com/api/v1/recipes";
   }
 
   getRecipe(recipe) {
